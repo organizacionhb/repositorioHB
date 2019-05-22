@@ -5,6 +5,7 @@ public class Persona {
 	private String dni;
 	private int edad;
 	private String telefono;
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -35,5 +36,12 @@ public class Persona {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
+	
+	@Override
+	public String toString() {
+		return "Nombre: " + this.nombre +" "+ this.apellidos + " , DNI: " + this.dni + " , " + this.edad + " años" + " , Tlf: " + this.telefono + "} ";
+	}
+	
+	
 	
 }
